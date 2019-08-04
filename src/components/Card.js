@@ -17,7 +17,7 @@ class Card extends React.Component {
     const { title, link, github, picture, desc } = this.props;
     return (
       <a className="card" href={ link } target="_blank">
-        <img className="card-pic" src={ picture } alt="Screenshot" />
+        <img className="card-pic" src={ process.env.PUBLIC_URL + '/projects-thumbs/' + picture } alt="Screenshot" />
         <div className="card-body">
           <div className="row">
             <h3 className="card-title">{ title }</h3>

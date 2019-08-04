@@ -1,7 +1,6 @@
 import React from 'react';
 import './reset.css';
 import './App.css';
-import './script.js';
 
 import Card from './components/Card'
 
@@ -25,7 +24,7 @@ class App extends React.Component {
       <div className="app">
         <div className="contact">Contact me</div>
         <div className="contact-small"><FiMail style={{ marginTop: 6 }} /></div>
-        <img className="pic" src="/me.png" ref={this.pic} />
+        <img className="pic" src={ process.env.PUBLIC_URL + '/me.png' } ref={this.pic} />
         <h1 className="name">Thomas Pompon</h1>
         <h2 className="bio">20 ans, Étudiant à <a className="italic" href="https://42.fr/" target="_blank">42</a> - Paris</h2>
         <div className="cards-wrap">
@@ -34,51 +33,51 @@ class App extends React.Component {
               title="Twitter Messages"
               link="https://tpompon.github.io/twitter-messages/"
               github="https://github.com/tpompon/twitter-messages"
-              picture="/projects-thumbs/twitter-messages.png"
+              picture="twitter-messages.png"
               desc="A simple front app clone of Twitter Inbox"
             />
             <Card
               title="Projet"
-              picture="/bg.jpg"
+              picture="bg.jpg"
               desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             />
             <Card
               title="Projet"
-              picture="/bg.jpg"
-              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
-          </div>
-          <div className="row-cards">
-            <Card
-              title="Projet"
-              picture="/bg.jpg"
-              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
-            <Card
-              title="Projet"
-              picture="/bg.jpg"
-              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
-            <Card
-              title="Projet"
-              picture="/bg.jpg"
+              picture="bg.jpg"
               desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             />
           </div>
           <div className="row-cards">
             <Card
               title="Projet"
-              picture="/bg.jpg"
+              picture="bg.jpg"
               desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             />
             <Card
               title="Projet"
-              picture="/bg.jpg"
+              picture="bg.jpg"
               desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             />
             <Card
               title="Projet"
-              picture="/bg.jpg"
+              picture="bg.jpg"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            />
+          </div>
+          <div className="row-cards">
+            <Card
+              title="Projet"
+              picture="bg.jpg"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            />
+            <Card
+              title="Projet"
+              picture="bg.jpg"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            />
+            <Card
+              title="Projet"
+              picture="bg.jpg"
               desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             />
           </div>
