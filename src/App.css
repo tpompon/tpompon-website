@@ -1,33 +1,212 @@
-.App {
+html {
+  background: url(/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+  .contact-small {
+    display: none;
+  }
+  .contact {
+    display: block;
+  }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-small {
+    display: none;
+  }
+  .contact {
+    display: block;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-small {
+    display: block;
+  }
+  .contact {
+    display: none;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .contact-small {
+    display: block;
+  }
+  .contact {
+    display: none;
+  }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .contact-small {
+    display: block;
+  }
+  .contact {
+    display: none;
+  }
+}
+
+.app {
+  margin: 50px;
+  font-family: 'Roboto';
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width: 400px;
+  margin: 20px;
+  background-color: white;
+  font-size: 20px;
+  border-radius: 15px;
+  color: black;
+  text-align: left;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, .2);
+  transition: 150ms ease all;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: 5px 15px 20px rgba(0, 0, 0, .6);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.card-pic {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card-title {
+
+}
+.card-desc {
+  margin-top: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+.card-body {
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pic {
+  border-radius: 50%;
+  width: 200px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, .2);
+}
+
+.name {
+  color: white;
+  font-size: 32px;
+  margin-top: 30px;
+}
+.bio {
+  margin-top: 20px;
+}
+.bio > a {
+  cursor: pointer;
+  color: white;
+}
+.bio > a:hover {
+  text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.row-cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.row > a {
+  margin-bottom: 3px;
+}
+
+.cards-wrap {
+  margin-top: 50px;
+}
+
+.github-logo {
+  width: 16px;
+  margin-left: 5px;
+  transition: 250ms linear all;
+}
+.github-logo:hover {
+  transform: rotate(360deg);
+  opacity: .8;
+}
+
+.contact {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgb(50, 50, 255);
+  border-radius: 40px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  transition: 250ms ease all;
+  z-index: 999;
+}
+.contact-small {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  background-color: rgb(50, 50, 255);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  transition: 250ms ease all;
+  z-index: 999;
+}
+.contact-small:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 15px rgba(50, 50, 255, .6);
+  transform: scale(1.2);
+}
+.contact:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 15px rgba(50, 50, 255, .6);
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+footer > a {
+  text-decoration: underline;
+  color: white;
+}
+
+.social-icon {
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
 }
