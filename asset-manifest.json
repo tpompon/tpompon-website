@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tpompon-website/static/css/main.71435dca.chunk.css",
+    "main.js": "/tpompon-website/static/js/main.98d9b711.chunk.js",
+    "main.js.map": "/tpompon-website/static/js/main.98d9b711.chunk.js.map",
+    "runtime~main.js": "/tpompon-website/static/js/runtime~main.12a4170a.js",
+    "runtime~main.js.map": "/tpompon-website/static/js/runtime~main.12a4170a.js.map",
+    "static/js/2.cace462f.chunk.js": "/tpompon-website/static/js/2.cace462f.chunk.js",
+    "static/js/2.cace462f.chunk.js.map": "/tpompon-website/static/js/2.cace462f.chunk.js.map",
+    "index.html": "/tpompon-website/index.html",
+    "precache-manifest.4d6adb45a91ade19086f752c17514ea4.js": "/tpompon-website/precache-manifest.4d6adb45a91ade19086f752c17514ea4.js",
+    "service-worker.js": "/tpompon-website/service-worker.js",
+    "static/css/main.71435dca.chunk.css.map": "/tpompon-website/static/css/main.71435dca.chunk.css.map"
+  }
+}
