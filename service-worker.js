@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tpompon-website/precache-manifest.75d023959ad00479bc4070439cc2d00f.js"
+  "/tpompon-website/precache-manifest.6b5743a4a4c76373b363972a9c52203f.js"
 );
 
 self.addEventListener('message', (event) => {
